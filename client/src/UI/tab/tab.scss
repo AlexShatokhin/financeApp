@@ -1,0 +1,14 @@
+.tab_item{
+    background-color: #E9E7EA;
+    border-radius: 30px;
+    margin: 5px;
+    &-success{
+        background-color: #DAE48E;
+    }
+    &-warning{
+        background-color: #F0DE5A;
+    }
+    &-violet{
+        background-color: #D7D0E6;
+    }
+}
