@@ -1,0 +1,1 @@
+export const tabItemsData = ["Home", "About", "Services", "Contact"];

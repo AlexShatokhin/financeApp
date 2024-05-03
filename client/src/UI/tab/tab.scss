@@ -2,6 +2,8 @@
     background-color: #E9E7EA;
     border-radius: 30px;
     margin: 5px;
+    padding: 15px 20px;
+    text-align: left;
     &-success{
         background-color: #DAE48E;
     }
@@ -10,5 +12,14 @@
     }
     &-violet{
         background-color: #D7D0E6;
+    }
+
+    &-title{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    &-subtitle{
+        font-size: 15px;
+        opacity: .7;
     }
 }
