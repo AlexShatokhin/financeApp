@@ -1,8 +1,11 @@
 import { useTypedSelector } from '../../hooks/useTypedSelector';
 import MenuTabContent from '../../components/menuTabContent/MenuTabContent';
-import getNeededTabs from '../../utils/getNeededTabs';
+import getAnimatedTabs from '../../utils/getAnimatedTabs';
 
 import './App.css';
+
+
+
 function App() {
 
 	const activeTab = useTypedSelector(state => state.MenuTabContentReducer.activeTab);
@@ -10,7 +13,7 @@ function App() {
 	return (
 		<div className="App">
 			<MenuTabContent />
-			{getNeededTabs(activeTab)}
+			{getAnimatedTabs(activeTab)}
 		</div>
 	);
 }
