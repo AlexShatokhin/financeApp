@@ -1,5 +1,7 @@
 import { FC } from "react";
 
+import AnimatedNumber from "../../UI/animatedNumber/AnimatedNumber";
+
 import BarChart from "./charts/BarChart";
 import DoughnutChart from "./charts/DoughnutChart";
 
@@ -14,7 +16,9 @@ const HomePageTabs : FC = () => {
         <section className="home-page__tabs">
             <TabContent>
                 <div className="tab_container">
-                    <Tab variant="success" width={"29vw"} title="Home" />
+                    <Tab variant="success" width={"29vw"} title="Home">
+                        <AnimatedNumber number={100} from={80} duration={700} />
+                    </Tab>
                     <Tab variant="warning" width={"29vw"} title="About" />
                     <Tab width={"29vw"} title="Contact" />
                 </div>
