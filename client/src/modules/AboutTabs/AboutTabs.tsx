@@ -1,5 +1,7 @@
 import { FC } from "react";
 
+import LineChart from "./charts/LineChart";
+
 import TabContent from "../../components/tabContent/TabContent";
 import Tab from "../../UI/tab/Tab";
 
@@ -14,7 +16,9 @@ const AboutTabs : FC = () => {
                 </div>
 
                 <div className="tab_container tab_container-large">
-                    <Tab width={"100%"} height={600} title="" />
+                    <Tab width={"100%"} height={600} title="" >
+                        <LineChart />
+                    </Tab>
                 </div>
             </TabContent>
         </section>

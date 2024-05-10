@@ -1,9 +1,13 @@
 import { FC } from "react";
 
+import BarChart from "./charts/BarChart";
+import DoughnutChart from "./charts/DoughnutChart";
+
 import TabContent from "../../components/tabContent/TabContent";
 import Tab from "../../UI/tab/Tab";
 
 import "./homePageTabs.scss";
+
 
 const HomePageTabs : FC = () => {
     return (
@@ -16,8 +20,12 @@ const HomePageTabs : FC = () => {
                 </div>
 
                 <div className="tab_container tab_container-large">
-                    <Tab width={"47%"} height={600} title="" />
-                    <Tab width={"47%"} height={600} title="" />
+                    <Tab width={"47%"} height={600} title="" subtitle="">
+                        <DoughnutChart />
+                    </Tab>
+                    <Tab width={"47%"} height={600} title="" >
+                        <BarChart />
+                    </Tab>
                 </div>
             </TabContent>
         </section>

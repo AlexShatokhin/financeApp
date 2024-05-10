@@ -22,4 +22,11 @@
         font-size: 15px;
         opacity: .7;
     }
+
+    &-content{
+        height: 90%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
 }
