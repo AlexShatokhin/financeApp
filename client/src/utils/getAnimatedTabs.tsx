@@ -2,6 +2,7 @@ import { Transition, SwitchTransition } from 'react-transition-group';
 import { MenuTabs } from "../types/menuTabs";
 import HomePageTabs from "../modules/HomePageTabs/HomePageTabs"
 import AboutTabs from "../modules/AboutTabs/AboutTabs";
+import ContactContent from '../modules/ContactContent/ContactContent';
 
 type TransitionStatus = 'entering' | 'entered' | 'exiting' | 'exited';
 
@@ -26,6 +27,7 @@ export default function getAnimatedTabs(activeTab: string) : React.ReactNode {
         switch(activeTab) {
             case MenuTabs.Home: return <HomePageTabs />;
             case MenuTabs.About: return <AboutTabs />;
+            case MenuTabs.Contact: return <ContactContent />;
             default: return <HomePageTabs />;
         }
     }
