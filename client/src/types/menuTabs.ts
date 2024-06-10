@@ -1,6 +1,6 @@
 export enum MenuTabs {
-    Home = "Home",
+    Home = "Главная",
     About = "About",
-    Services = "Services",
+    Services = "Добавление",
     Contact = "Contact"
 }
